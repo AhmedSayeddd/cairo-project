@@ -1,0 +1,300 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- css style -->
+    <link rel="stylesheet" href="/cairo project/css/style.css">
+    <title>اسوان - Aswan</title>
+
+    <link rel="shortcut icon" type="image/icon" href="../pic/logo/logo.png" />
+</head>
+
+<body>
+    <!-- start navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="../pic/logo/logo.png" width="120px" height="60px" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="dark-mode">
+                    <button class="toggle-btn" onclick="toggleDarkMode()">
+                        <div class="sun-rays"></div>
+                        <div class="main-circle"></div>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active translatable reverse-text" aria-current="page"
+                                href="/cairo project/index.html">الصفحة الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link translatable reverse-text" href="../../index.html#destination">وجهتك
+                                القادمة</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link translatable reverse-text" href="#footer">أتصل بنا</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link translatable reverse-text" href="../pages/login.html" target="_blank">سجل</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-btn">
+                    <form>
+                        <label for="search">Search</label>
+                        <input required="" pattern=".*\S.*" type="search" class="input" id="search">
+                        <span class="caret"></span>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- end navbar -->
+
+    <!-- start hero -->
+    <div id="hero" class="hero">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button style="background-color: white; width: 10px; height: 10px; border-radius: 50%;" type="button"
+                    data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
+                <button style="background-color: white; width: 10px; height: 10px; border-radius: 50%;" type="button"
+                    data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button style="background-color: white; width: 10px; height: 10px; border-radius: 50%;" type="button"
+                    data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="../pic/pic-aswan/hero-img-aswan-1.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center text-center w-100 h-100"
+                        style="background: rgba(0, 0, 0, 0.5);">
+                        <h2 class="text-white pb-3 translatable">أسوان مدينة سياحية تجمع بين التاريخ والطبيعة الخلابة
+                            على ضفاف النيل</h2>
+                        <button class="button"><a href="#footer">تواصل معنا</a></button>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="../pic/pic-aswan/hero-img-aswan-2.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center text-center w-100 h-100"
+                        style="background: rgba(0, 0, 0, 0.5);">
+                        <h2 class="text-white pb-3 translatable">أسوان مدينة سياحية تجمع بين التاريخ والطبيعة الخلابة
+                            على ضفاف النيل</h2>
+                        <button class="button"><a href="#footer">تواصل معنا</a></button>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="../pic/pic-aswan/hero-img-aswan-3.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center text-center w-100 h-100"
+                        style="background: rgba(0, 0, 0, 0.5);">
+                        <h2 class="text-white pb-3 translatable">أسوان مدينة سياحية تجمع بين التاريخ والطبيعة الخلابة
+                            على ضفاف النيل</h2>
+                        <button class="button"><a href="#footer">تواصل معنا</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end hero -->
+
+    <!-- start restaurant -->
+    <div id="AswanRestaurant" class="Description py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 d-lg-block d-none center">
+                    <img src="../pic/pic-aswan/restaurant.png" class="picture" width="75%" height="100%" alt="img">
+                </div>
+                <div class="col-12 col-lg-6 text-center text-lg-end d-flex justify-content-center flex-column">
+                    <h2 class="fw-bold pb-3 translatable">المطاعم</h2>
+                    <p class="fw translatable">تتميز أسوان بمشهد مطعمي متنوع يجمع بين النكهات النوبية الأصيلة والمأكولات
+                        المصرية التقليدية، مما يجعلها وجهة مثالية لعشاق الطعام. تقدم مطاعم المدينة تجربة فريدة للزوار من
+                        خلال أطباقها الشهية التي تعتمد على المكونات الطازجة والوصفات المتوارثة عبر الأجيال. يمكن للزوار
+                        تذوق الأطباق النوبية التقليدية مثل السمك المشوي على الطريقة النوبية، والملوخية بالأرانب، والفتة
+                        النوبية في مطاعم محلية شهيرة مثل أبو زيد والنوبة كافيه، حيث تمتزج النكهات الفريدة مع أجواء
+                        الضيافة الدافئة.
+                        كما تتميز أسوان بوجود العديد من المطاعم المطلة على نهر النيل، مثل المراكب العائمة والمطاعم
+                        النوبية التقليدية، حيث يمكن للزوار الاستمتاع بوجبة شهية أثناء مشاهدة مناظر الغروب الخلابة.
+                        وتتوفر أيضًا خيارات عالمية لمحبي التنوع، حيث تضم المدينة مطاعم تقدم المأكولات الإيطالية والهندية
+                        والشرقية، مما يجعلها تلبي مختلف الأذواق.
+                        سواء كنت تبحث عن تجربة طعام محلية أصيلة أو تفضل تذوق الأطباق العالمية، فإن مطاعم أسوان توفر لك
+                        تجربة لا تُنسى وسط أجواء ساحرة وهادئة تعكس جمال المدينة وتاريخها العريق.</p>
+                    <button class="btn"><a href="/cairo project/html/aswan pages/aswan restaurants.html" target="_blank" class="nav-link">تذوق بطعم مختلف</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end restaurant -->
+
+    <!-- start cafe -->
+    <div id="AswanCafe" class="Description py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 text-center text-lg-end d-flex justify-content-center flex-column">
+                    <h2 class="fw-bold pb-3 translatable">المقاهي</h2>
+                    <p class="fw translatable">تضم أسوان مجموعة رائعة من المقاهي التي توفر تجربة استثنائية للزوار، حيث
+                        تجمع بين الأجواء الهادئة والإطلالات الخلابة على نهر النيل. تتميز الكافيهات النوبية بطابعها
+                        الفريد وألوانها الزاهية، مثل النوبة كافيه وكافيه أرمندي، حيث يمكن للزوار الاستمتاع بكوب من الشاي
+                        النوبي أو القهوة وسط أجواء تراثية تعكس روح المدينة.
+                        كما تنتشر في أسوان العديد من المقاهي العصرية التي تقدم مشروبات مبتكرة وحلويات لذيذة، مثل لوفت
+                        كافيه وبلو سكاي كافيه، والتي تعد أماكن مثالية للاسترخاء أو قضاء وقت ممتع مع الأصدقاء. ولعشاق
+                        الإطلالات الساحرة، توفر الكافيهات المطلة على النيل، مثل سكاى فيو كافيه وحدائق فندق كتراكت، تجربة
+                        لا مثيل لها حيث يمكن الاستمتاع بالمشروبات وسط مناظر طبيعية خلابة.
+                        سواء كنت تبحث عن مكان هادئ للتأمل والاسترخاء أو كافيه عصري لقضاء وقت ممتع، فإن كافيهات أسوان
+                        تقدم خيارات متنوعة تناسب جميع الأذواق، مما يجعلها وجهة مثالية لمحبي الأجواء الراقية والمميزة.
+                    </p>
+                    <button class="btn"><a href="/cairo project/html/aswan pages/aswan cafes.html" target="_blank" class="nav-link">قهوتك بطابع آخر</a></button>
+                </div>
+                <div class="col-12 col-lg-6 d-lg-flex d-none justify-content-center align-items-center">
+                    <img src="../pic/pic-aswan/cafe.png" class="picture" width="75%" height="100%" alt="img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end cafe -->
+
+    <!-- start tourism -->
+    <div id="AswanTourism" class="Description py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 d-lg-block d-none center">
+                    <img src="../pic/pic-aswan/tourism.png" class="picture" width="75%" height="100%" alt="img">
+                </div>
+                <div class="col-12 col-lg-6 text-center text-lg-end d-flex justify-content-center flex-column">
+                    <h2 class="fw-bold pb-3 translatable">مناطق سياحية</h2>
+                    <p class="fw translatable">تعد أسوان واحدة من أبرز الوجهات السياحية في مصر، حيث تتميز بمعالمها
+                        التاريخية الفريدة وجمال طبيعتها الخلابة. يمكن للزوار استكشاف معبد فيلة، الذي يقع على جزيرة ساحرة
+                        وسط النيل، ويعد من أهم المعابد المصرية القديمة. كما يمكنهم زيارة معبد أبو سمبل، أحد أعظم المعابد
+                        الفرعونية التي بناها الملك رمسيس الثاني، حيث تضفي تماثيله الضخمة وإضاءته المذهلة داخل المعبد
+                        تجربة لا تُنسى.
+                        ولا تقتصر معالم أسوان على الآثار الفرعونية فقط، بل تضم أيضًا جزيرة النباتات، التي تعد واحة خضراء
+                        تزخر بأنواع نادرة من النباتات الاستوائية، مما يجعلها مكانًا مثاليًا لمحبي الطبيعة. كما يمكن
+                        الاستمتاع بجولة فريدة داخل القرى النوبية، حيث المنازل الملونة والثقافة النوبية الأصيلة التي تضيف
+                        لمسة ساحرة للرحلة.
+                        أما لمحبي الاسترخاء، فإن السد العالي وبحيرة ناصر يوفران مشاهد بانورامية مذهلة، مع إمكانية
+                        الاستمتاع برحلات القوارب لمشاهدة الطبيعة البرية والحياة المائية في المنطقة. سواء كنت مهتمًا
+                        بالتاريخ أو الطبيعة أو الثقافة، فإن أسوان تقدم مزيجًا فريدًا من التجارب السياحية التي تجعل
+                        زيارتها مغامرة لا تُنسى.</p>
+                    <button class="btn"><a href="/cairo project/html/aswan pages/aswan tourism.html" target="_blank" class="nav-link">أماكن تروي قصصًا</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end tourism -->
+
+    <!-- start hotel -->
+    <div id="AswanHotel" class="Description py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 text-center text-lg-end d-flex justify-content-center flex-column">
+                    <h2 class="fw-bold pb-3 translatable">فنادق</h2>
+                    <p class="fw translatable">تضم أسوان مجموعة متنوعة من الفنادق التي توفر للزوار تجربة إقامة فريدة وسط
+                        أجواء المدينة الساحرة. لمحبي الفخامة، توفر فنادق مثل سوفيتيل ليجند أولد كتراكت وموفنبيك أسوان
+                        تجربة راقية مع إطلالات خلابة على نهر النيل، حيث يمكن للنزلاء الاستمتاع بخدمات فاخرة تجمع بين
+                        الراحة والتاريخ العريق.
+                        كما تضم أسوان فنادق متوسطة المستوى مثل هيلتون أسوان وبسمة أسوان، التي توفر إقامة مريحة بأسعار
+                        مناسبة، مع إطلالات رائعة ومرافق حديثة تناسب العائلات والمجموعات السياحية. أما لمن يبحثون عن
+                        تجربة أكثر بساطة، فتوفر المدينة مجموعة من النزل والبوتيك هوتيلات المطلة على النيل، مثل إيكولودج
+                        النوبة، حيث يمكن الاستمتاع بالضيافة النوبية الأصيلة وسط أجواء هادئة ودافئة.
+                        سواء كنت تبحث عن رفاهية الفنادق العالمية أو تجربة إقامة محلية مميزة، فإن فنادق أسوان تقدم خيارات
+                        متنوعة تناسب جميع الميزانيات، مما يجعل الإقامة في هذه المدينة تجربة لا تُنسى تمتزج فيها الراحة
+                        مع سحر الطبيعة والتاريخ العريق.</p>
+                    <button class="btn"><a href="/cairo project/html/aswan pages/aswan hotel.html" target="_blank" class="nav-link">راحة تفوق التوقعات</a></button>
+                </div>
+                <div class="col-12 col-lg-6 d-lg-flex d-none justify-content-center align-items-center">
+                    <img src="../pic/pic-aswan/hotel.png" class="picture" width="75%" height="100%" alt="img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end hotel -->
+
+    <!-- start footer -->
+    <footer id="footer" class="footer pt-5 text-center">
+        <div class="pt-3" style="box-shadow: 1px -12px 36px -31px black;">
+            <div class="container">
+                <div>
+                    <img src="../pic/logo/logo.png" width="110px" height="60px" alt="لوجو الشركة">
+                </div>
+                <ul class="example-2">
+                    <li class="icon-content">
+                        <a data-social="whatsapp" aria-label="Whatsapp" href="#" target="_blank">
+                            <div class="filled"></div>
+                            <svg xml:space="preserve" viewBox="0 0 24 24" class="bi bi-whatsapp" fill="currentColor"
+                                height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="currentColor"
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z">
+                                </path>
+                            </svg>
+                        </a>
+                        <div class="tooltip">Whatsapp</div>
+                    </li>
+                    <li class="icon-content">
+                        <a data-social="facebook" aria-label="Facebook" href="#" target="_blank">
+                            <div class="filled"></div>
+                            <svg xml:space="preserve" viewBox="0 0 24 24" class="bi bi-facbook" fill="currentColor"
+                                height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="currentColor"
+                                    d="M23.9981 11.9991C23.9981 5.37216 18.626 0 11.9991 0C5.37216 0 0 5.37216 0 11.9991C0 17.9882 4.38789 22.9522 10.1242 23.8524V15.4676H7.07758V11.9991H10.1242V9.35553C10.1242 6.34826 11.9156 4.68714 14.6564 4.68714C15.9692 4.68714 17.3424 4.92149 17.3424 4.92149V7.87439H15.8294C14.3388 7.87439 13.8739 8.79933 13.8739 9.74824V11.9991H17.2018L16.6698 15.4676H13.8739V23.8524C19.6103 22.9522 23.9981 17.9882 23.9981 11.9991Z">
+                                </path>
+                            </svg>
+                        </a>
+                        <div class="tooltip">Facebook</div>
+                    </li>
+                    <li class="icon-content">
+                        <a data-social="instagram" aria-label="Instagram" href="#" target="_blank">
+                            <div class="filled"></div>
+                            <svg xml:space="preserve" viewBox="0 0 16 16" class="bi bi-instagram" fill="currentColor"
+                                height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="currentColor"
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334">
+                                </path>
+                            </svg>
+                        </a>
+                        <div class="tooltip">Instagram</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="py-3 container">
+                <p class="translatable">نحن هنا من أجلك من أجل ان نساعدك على تحديد وجهتك القادمة</p>
+            </div>
+            <div class="container contact-info">
+                <ul class="list-unstyled row">
+                    <li class="col-md-6 col-sm-12 mb-2 translatable">القاهرة - مصر</li>
+                    <li class="col-md-6 col-sm-12 mb-2">0100 100 1000</li>
+                    <li class="col-md-6 col-sm-12 mb-2"><a href="#">dalilak@gmail.com</a></li>
+                    <li class="col-md-6 col-sm-12 mb-2"><a href="#" target="_blank">www.dalilak.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="rights">
+            <hr class="my-1" />
+            <p class="translatable my-1">
+                &copy; Designed by Yasser_W_Sedky © 2025
+            </p>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+
+
+    <!-- script -->
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- js srcipt -->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
